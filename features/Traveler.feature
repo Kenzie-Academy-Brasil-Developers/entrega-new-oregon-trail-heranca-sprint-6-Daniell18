@@ -7,7 +7,7 @@ Funcionalidade: Traveler
 
     Contexto:
         Dado um Traveler de nome "João"
-        E ele sempre começa a viagem com 1 refeição
+        E ele sempre começa a viagem com 1 refeições
         E ele sempre começa a viagem saudável.
 
     Cenário: Caçou para conseguir mais refeições
@@ -29,3 +29,10 @@ Funcionalidade: Traveler
         E o Traveler parar para comer 2 vezes
         Então a quantidade de refeições deve ser igual a 3
         E o Traveler não ficará doente
+    Cenario: Ganhou comida
+        Quando Travaler ganhar 1 refeições
+         Então a quantidade de refeições deve ser igual a 2
+    Cenario: recebeu cura
+    Quando Travaler receber cura
+    Então Travaler ficará saudável
+     
